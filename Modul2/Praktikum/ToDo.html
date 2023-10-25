@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>To Do List App!</title>
+</head>
+<body>
+    
+    <div class="app">
+        <div class="container">
+            <div class="add">Add Activity!</div>
+            <div id="newtask">
+                <input type="text" placeholder="Tabee Kanda . . .">
+                <button id="add-btn">Add</button>
+            </div> 
+            <div id="tasks">
+                <div class="list">List Activity!</div>
+                <p id="pending-tasks"> You have <span class="count-value">0</span> task(s) to complete!</p>
+            </div>
+        </div>
+        <p id="error">Input Cannot Be Empty!</p>
+    </div>
+    
+    <!-- Script -->
+    <script src="op.js"></script>
+    
+</body>
+</html>

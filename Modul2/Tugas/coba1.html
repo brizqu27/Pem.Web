@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+</head>
+<body>
+
+    <h1>PENJUMLAHAN BILANGAN !</h1>
+
+		<form name="calc" id="hapus">
+			<div>
+				<label>Bilangan Pertama:</label>
+				<input type="text" name="bil1" id="bil1" />
+				<label>Bilangan Kedua:</label>
+				<input type="text" name="bil2" id="bil2" />
+			</div>
+
+			<div style="padding-top: 10px;">
+				<input type="button" value="Jumlahkan" onclick="hitung()">
+				<input type="button" value="Ulang" id="tombol" onclick="newFunction()">
+			</div>
+		</form>
+
+</body>
+
+    <!--Java Script-->
+    <script>
+      function hitung(){
+            var bil1 = parseFloat(document.calc.bil1.value);
+            var bil2 = parseFloat(document.calc.bil2.value);
+            var hasil = bil1 + bil2;
+            document.calc.hasil.value = alert("Hasilnya Adalah : " + hasil);
+          }
+
+      function newFunction(){  
+        document.getElementById("hapus").reset()
+      }
+      </script>
+</html>

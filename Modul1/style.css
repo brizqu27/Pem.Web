@@ -1,0 +1,66 @@
+/* Navbar */
+.navbarNavAltMarkup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+}
+
+.custom-btn-login{
+    background-color: #2879f2;   
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.3s;
+    color: black;
+    font-size: 12px;
+    
+}
+
+.custom-btn-login:hover{
+    background-color: cornflowerblue;
+    opacity: 1;
+    color: white;
+}
+
+.custom-btn-signup{
+    background-color: whitesmoke;
+    width: 110px;
+    height: 30px;
+    margin: 5px;
+    font-size: 12px;
+    transform: 0.3s;
+    border-color: black;
+}
+
+.custom-btn-signup:hover{
+    background-color: white;
+    opacity: 1;
+    border-color: black;
+}
+
+@media (max-width: 1000px) {
+    .custom-btn-login,.custom-btn-signup{
+        width: 100%;
+    }
+}
+
+/* Background */
+.overlay-text{
+    color: white;
+    font-style:italic;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.example{
+    background-position: center;
+}
+
+/* Footer */
+.m-5{
+    background-color: white;
+    min-height: 50px;
+}

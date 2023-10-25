@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validasi!</title>
+</head>
+<body>
+
+    <!--Desain Form-->
+    <div class="login">
+		<form onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<label>Alamat:</label>
+				<textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Daftar" class="tombol">
+			</div>
+		</form>
+	</div>
+</body>
+
+    <!--Java Script-->
+    <script>
+	    function validasi() {
+	    	var nama = document.getElementById("nama").value;
+	    	var email = document.getElementById("email").value;
+	    	var alamat = document.getElementById("alamat").value;
+			
+	    	if (nama != "" && email!="" && alamat !="") {
+	    		return true;
+	    	}else{
+	    		alert('Anda harus mengisi data dengan lengkap !');
+	    	}
+	    }
+    </script>
+</html>
